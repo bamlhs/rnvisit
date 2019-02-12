@@ -19,6 +19,10 @@ const styles = StyleSheet.create({
     }
 });
 export default class DashBoardScreen extends Component {
+
+  static navigationOptions = {
+    header: null
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -34,7 +38,7 @@ export default class DashBoardScreen extends Component {
          style={{width, height}} >
         <View style={styles.topView}></View>
         <View style={styles.bottomView}>
-        <CustomizedButton title="Show Places" onPress={() => console.log("Show Places")}/>
+        <CustomizedButton title="Show Places" onPress={() => this.props.navigation.navigate('places')}/>
         <CustomizedButton title="Save Place" onPress={() => console.log("Save Place")}/>
         </View>
       </ImageBackground>

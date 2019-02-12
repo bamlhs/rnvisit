@@ -4,6 +4,10 @@ import axios from 'axios';
 import CustomizedListItem from '../components/CustomizedListItem';
 
 export default class PlacesScreen extends Component {
+
+    static navigationOptions = {
+        title: 'Places'
+      }
   constructor(props) {
     super(props);
     this.state = {

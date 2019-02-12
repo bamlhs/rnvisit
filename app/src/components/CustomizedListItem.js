@@ -1,5 +1,8 @@
 import React from 'react';
 import { Text, View, Image, Dimensions } from 'react-native';
+
+import { Rating } from 'react-native-elements';
+
 const { width, height } = Dimensions.get("window");
 
 
@@ -44,7 +47,9 @@ const CustomizedListItem = ({
         {item.category}
         </Text>
        </View>
-       <View style={{backgroundColor: 'yellow', flex: 1,}}></View>
+       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',}}>
+       <Rating startingValue={item.stars} imageSize={20} readonly />
+       </View>
        </View>
     </View>
 );

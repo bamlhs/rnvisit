@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import DashBoardScreen from './screens/DashBoardScreen';
-import PlacesScreen from './screens/PlacesScreen';
+import Nav from './navigator';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +11,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <PlacesScreen />
+      <Nav />
     );
   }
 }
