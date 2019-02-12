@@ -4,10 +4,25 @@ import { Button } from 'react-native-elements';
 
 
 const CustomizedButton = ({
-    params,
+    title,onPress
 }) => (
     <View>
-        <Text>CustomizedButton</Text>
+        <Button 
+        buttonStyle={{backgroundColor: 'white', 
+        borderColor: 'rgb(107,209,61)',
+        borderRadius: 10,
+        borderWidth: 1,
+    }}
+        containerStyle={{padding: 10, margin: 10,}}
+        titleStyle={{
+            fontSize: 22,
+            fontWeight: "bold",
+            fontStyle: "normal",
+            textAlign: "left",
+            color: "#707070"
+          
+        }}
+        title={title} onPress={onPress}/>
     </View>
 );
 
