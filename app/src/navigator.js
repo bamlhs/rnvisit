@@ -11,7 +11,7 @@ const mainNav = createStackNavigator({
     place: { screen: PlaceScreen },
     add: {screen: AddPlaceScreen}
 },{
-initialRouteName: 'add',
+initialRouteName: 'dash',
  defaultNavigationOptions: {
     headerBackTitleStyle: {
         color: '#c0c0c0'
